@@ -9,6 +9,6 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-AWS_ACCESS_KEY: "AKIAVQMYZ4HTH7NKN2UX"
-AWS_SECRET_KEY: "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"
+AWS_ACCESS_KEY: "AKIAVQMYZ4HTFCLUM5OP"
+AWS_SECRET_KEY: "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"
 AWS_BUCKET: "matt-arrick-flixter"
