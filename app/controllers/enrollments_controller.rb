@@ -3,7 +3,7 @@ class EnrollmentsController < ApplicationController
 
   def create
     current_user.enrollments.create(course: current_course)
-    redirect_to course_path(current_course)
+    redirect_to course_path(current_course), notice: 'You have successfully enrolled in this course.'
   end
 
   private
