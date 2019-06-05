@@ -7,6 +7,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
   </head>
 
   <body>
@@ -52,9 +53,14 @@
     </div>
 
     <div id="footer">
-      <b>Teachers</b>
-      <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <div class="container">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+      </div>
     </div>
+
+    <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
   </body>
 </html>
