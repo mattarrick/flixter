@@ -1,12 +1,8 @@
 class Instructor::SectionsController < ApplicationController
   before_action :authenticate_user!
-  before_action :require_authorized_for_current_course, only: [:new, :create]
+  before_action :require_authorized_for_current_course, only: [:create]
   before_action :require_authorized_for_current_section, only: [:update]
   skip_before_action :verify_authenticity_token
-
-  def new
-    @section = Section.new
-  end
 
   def create
     @section = current_course.sections.create(section_params)
